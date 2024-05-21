@@ -239,7 +239,7 @@ static int convert_result(bool result)
 		return -1;
 	}
 
-	return 0;
+	return 1;
 }
 
 char *get_milliseconds(char *dst)
