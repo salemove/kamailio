@@ -100,7 +100,6 @@ static int mod_init(void)
 	rc = statsd_init(statsd_params.ip, statsd_params.port);
 	if(rc == false) {
 		LM_ERR("Statsd connection failed (ERROR_CODE: %i)\n", rc);
-		return -1;
 	} else {
 		LM_INFO("Statsd: success connection to statsd server\n");
 	}
